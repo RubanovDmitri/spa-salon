@@ -1,0 +1,788 @@
+@media screen and (max-width: 1900px) {
+  #services {
+    #services-container {
+      #services-lavender {
+        right: -120px;
+      }
+    }
+  }
+
+  #masters {
+    #masters-container {
+      #rose-masters {
+        right: -121px;
+      }
+    }
+  }
+
+  #gallery .slick-next {
+    right: 540px;
+  }
+
+  #gallery .slick-prev {
+    left: 570px;
+  }
+
+  #address {
+    #address-container {
+      #rose-address {
+        right: -110px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1229px) {
+  #header {
+    .header-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      justify-content: space-between;
+
+      .menu-items {
+        margin: 0;
+      }
+
+      .logo-container {
+        margin: 0;
+      }
+    }
+  }
+
+  #main {
+    #main-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+
+  #advantages {
+    #advantages-container {
+      padding: 100px 20px;
+    }
+  }
+
+  #services {
+    #services-container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      #services-lavender {
+        right: 0;
+      }
+    }
+  }
+
+  #discount {
+    #discount-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  #masters {
+    #masters-container {
+      padding-left: 20px;
+
+      #rose-masters {
+        right: 0;
+      }
+    }
+  }
+
+  #masters .slick-prev {
+    left: 534px;
+    top: 336px;
+  }
+
+  #masters .slick-next {
+    right: 536px;
+    top: 336px;
+  }
+
+  #gallery {
+    #gallery-text-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  #gallery .slick-prev {
+    left: 451px;
+  }
+
+  #gallery .slick-next {
+    right: 421px;
+  }
+
+  #questions {
+    #questions-container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      #accordion-text-container {
+        #question-text-container {
+          width: 416px;
+        }
+      }
+    }
+  }
+
+  #address {
+    #address-container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      #rose-address {
+        right: 0;
+      }
+
+      #map {
+        position: relative;
+        z-index: 5;
+      }
+    }
+  }
+
+  #footer {
+    #footer-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+  #main {
+    #main-container {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+
+  #advantages {
+    #advantages-container {
+      #advantage-card-container {
+        display: flex;
+        justify-content: space-between;
+
+        .advantage-card {
+          margin-right: 0;
+
+          &:nth-child(3) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #services {
+    #services-container {
+      #service-card-container {
+        max-width: 650px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        .service-card {
+          margin: 15px 0;
+        }
+
+      }
+    }
+  }
+
+  #masters {
+    #masters-container {
+      padding-top: 100px;
+    }
+  }
+
+  #masters .slick-prev {
+    left: 445px;
+    top: 293px;
+  }
+
+  #masters .slick-next {
+    right: 445px;
+    top: 293px;
+  }
+
+  #gallery {
+    #gallery-text-container {
+      #gallery-title {
+        margin-top: 100px;
+      }
+    }
+  }
+
+  #gallery .slick-next {
+    right: 331px;
+  }
+
+  #gallery .slick-prev {
+    left: 356px;
+  }
+
+  #questions {
+    margin-top: 100px;
+    background: rgb(250, 243, 250);
+
+    #questions-container {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 100px;
+
+      #right-rose-accordion {
+        display: none;
+      }
+
+      #accordion-text-container {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        #accordion {
+          max-width: 715px;
+        }
+
+        #question-text-container {
+        }
+      }
+    }
+  }
+
+  #address {
+    #address-container {
+      padding-top: 12px;
+      padding-bottom: 90px;
+
+      #map iframe {
+        width: 500px;
+        height: 400px;
+      }
+    }
+  }
+
+  #footer {
+    #footer-container {
+      .logo-container {
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  #header {
+    .header-container {
+
+      .menu-items {
+        order: 2;
+
+        .menu-item {
+          font-size: 16px;
+        }
+      }
+
+      .logo-container {
+        order: 1;
+      }
+
+      .phone-number {
+        order: 3;
+      }
+    }
+  }
+
+  #advantages {
+    #advantages-container {
+      text-align: center;
+
+      #advantage-card-container {
+        justify-content: center;
+      }
+    }
+  }
+
+  #discount {
+    #discount-container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+      #big-circle {
+        display: none;
+      }
+    }
+  }
+
+  #services {
+    #services-container {
+      text-align: center;
+
+      .services-text {
+        margin: 20px auto;
+        width: auto;
+      }
+    }
+  }
+
+  #masters {
+    #masters-container {
+      text-align: center;
+      padding-top: 50px;
+
+      #masters-text {
+        margin: 30px auto;
+        position: relative;
+        z-index: 9;
+      }
+    }
+  }
+
+  #masters .slick-next {
+    right: 292px;
+    top: 325px;
+  }
+
+  #masters .slick-prev {
+    left: 325px;
+    top: 325px;
+  }
+
+  #gallery {
+    #gallery-container {
+      padding: 0 20px;
+
+      .gallery-image {
+        max-width: 352px;
+      }
+    }
+  }
+
+  .slick-dots {
+    left: calc(50% - 75px);
+  }
+
+
+  #gallery .slick-next {
+    right: 203px;
+  }
+
+  #gallery .slick-prev {
+    left: 235px;
+  }
+
+  #address {
+    #address-container {
+      flex-wrap: wrap;
+      padding-bottom: 15px;
+
+      #address-text-container {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        #contacts-title {
+          margin-right: 100px;
+        }
+
+        #time-phone-container {
+          margin-left: 0;
+
+          #lavender-address {
+            top: -132px;
+            left: 266px;
+          }
+        }
+      }
+
+      #map {
+        margin: 20px auto 0 auto;
+      }
+    }
+  }
+
+  #footer {
+    #footer-container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .phone-number {
+        display: none;
+      }
+
+      #time {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  #header {
+    .header-container {
+      #burger {
+        display: block;
+        font-size: 25px;
+        color: #2c0526;
+      }
+
+      #menu-close-small {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 146;
+      }
+
+      .menu-items {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        padding-top: 60px;
+        justify-content: flex-start;
+        z-index: 145;
+        flex-direction: column;
+        text-align: center;
+
+        .menu-item {
+          font-size: 20px;
+          color: #640655;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+
+  #header.menu-open .menu-items {
+    display: block;
+  }
+
+  #main {
+    #main-container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+  }
+
+  #advantages {
+    #advantages-container {
+      padding: 50px 20px;
+
+    }
+  }
+
+  #services {
+    #services-container {
+      #service-card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  #discount {
+    #discount-container {
+      text-align: center;
+
+      #discount-text {
+        max-width: max-content;
+      }
+    }
+  }
+
+  #masters {
+    #masters-container {
+      padding-right: 20px;
+
+      #rose-masters {
+        display: none;
+      }
+
+      #masters-text {
+        width: auto;
+      }
+
+      .masters-cards-container {
+        .master-card {
+          margin: 0 30px;
+          max-width: 384px;
+
+          .master-card-text {
+            width: 156px;
+            padding: 2px 0 11px 0;
+
+            .master-card-experience {
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #masters .slick-dots {
+    left: calc(50% - 113px);
+  }
+
+  #gallery {
+    #gallery-text-container {
+      text-align: center;
+    }
+
+    #gallery-container {
+      .gallery-image {
+        margin: 0 15px;
+      }
+    }
+  }
+
+  .slick-dots {
+    left: calc(50% - 150px);
+  }
+
+  #questions {
+    #questions-container {
+      #accordion-text-container {
+        #accordion {
+          max-width: 400px;
+
+          .accordion-item span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .ui-widget-content {
+    width: auto;
+  }
+
+  #address {
+    #address-container {
+
+      #address-text-container {
+
+        #contacts-title {
+          margin-bottom: 30px;
+        }
+
+        #time-phone-container {
+          .time-title {
+            margin: 0;
+          }
+
+          #lavender-address {
+            width: 200px;
+            top: -174px;
+            left: 201px;
+          }
+        }
+      }
+
+      #map {
+        iframe {
+          width: 378px;
+        }
+      }
+    }
+  }
+
+  #footer {
+    #footer-container {
+      justify-content: center;
+
+      #icons {
+        order: 3;
+        margin: 20px auto 0 auto;
+      }
+
+      .logo-container {
+        order: 1;
+        margin: 0 auto;
+      }
+
+      #time {
+        margin: 0 auto;
+        order: 2;
+      }
+    }
+  }
+
+  #reservation-container {
+    #reservation {
+      #reservation-cancel {
+        display: none;
+      }
+
+      #reservation-content {
+        .input-container {
+          input, select {
+            max-width: 215px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #masters {
+    #masters-container {
+      .masters-cards-container {
+        .master-card {
+          max-width: 430px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  #masters {
+    #masters-container {
+      .masters-cards-container {
+        .master-card {
+          max-width: 384px;
+        }
+      }
+    }
+
+  }
+
+  #gallery {
+    #gallery-container {
+      .gallery-image {
+        max-width: 301px;
+        margin: 0 15px;
+      }
+    }
+  }
+
+  .slick-dots {
+    left: calc(50% - 150px);
+  }
+
+  #address {
+    #address-container {
+      text-align: center;
+
+      #address-text-container {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        flex-direction: column;
+
+        #contacts-title {
+          margin: 0 auto 20px auto;
+        }
+
+        #address-text {
+          margin: 0 auto 20px auto;
+        }
+
+        #time-phone-container {
+          text-align: center;
+
+          #lavender-address {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  #address {
+    #address-container {
+      #map {
+        iframe {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  #reservation-container {
+    #reservation {
+      padding: 20px;
+    }
+  }
+
+}
+
+//@media screen and (max-width: 374px){
+//  #gallery{
+//    #gallery-container{
+//      padding: 0 0 0 10px;
+//      .gallery-image{
+//        max-width: 301px;
+//        margin: 0;
+//      }
+//    }
+//  }
+//}
+
+@media screen and (max-width: 325px) {
+  #header {
+    .header-container {
+      .phone-number {
+        display: none;
+      }
+    }
+  }
+
+  #gallery {
+    #gallery-container {
+      padding: 0;
+
+      .gallery-image {
+        max-width: 293px;
+      }
+    }
+  }
+
+  #questions {
+    #questions-container {
+      #accordion-text-container {
+        #question-text-container {
+          max-width: 300px;
+
+          #input {
+            input {
+              width: 224px;
+            }
+          }
+
+          button {
+            width: 224px;
+          }
+        }
+      }
+    }
+  }
+
+  #address {
+    #address-container {
+      #map {
+        iframe {
+          width: 280px;
+          height: 275px;
+        }
+      }
+    }
+  }
+}
