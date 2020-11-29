@@ -11,6 +11,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="src/styles/magnific-popup.css">
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover.css">
     <link rel="stylesheet" href="src/styles/main.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -56,8 +57,8 @@
             и комплексное оздоровление организма, а наши мастера — квалифицированные специалисты
             с медицинским образованием.
         </div>
-        <div id="action">
-            <a href="#services" class="btn">
+        <div id="action" >
+            <a href="#services" class="btn hvr-shutter-in-vertical">
                 Выбрать SPA-программу
             </a>
         </div>
@@ -132,7 +133,7 @@
                 <div class="service-card-small-text">Сеанс: 1 час</div>
                 <div class="service-card-price-container">
                     <div class="service-card-price">от 3 700 руб.</div>
-                    <div class="service-card-button btn" id="stone-massage">Записаться</div>
+                    <div class="service-card-button hvr-shutter-in-vertical btn " id="stone-massage">Записаться</div>
                 </div>
             </div>
             <div class="service-card">
@@ -147,7 +148,7 @@
                 <div class="service-card-small-text">Сеанс: 1 час</div>
                 <div class="service-card-price-container">
                     <div class="service-card-price">от 3 100 руб.</div>
-                    <div class="service-card-button btn" id="bali-massage">Записаться</div>
+                    <div class="service-card-button btn hvr-shutter-in-vertical" id="bali-massage">Записаться</div>
                 </div>
             </div>
             <div class="service-card">
@@ -163,7 +164,7 @@
                 <div class="service-card-small-text">Сеанс: 1,5 часа</div>
                 <div class="service-card-price-container">
                     <div class="service-card-price">от 5 700 руб.</div>
-                    <div class="service-card-button btn" id="with-pouches-massage">Записаться</div>
+                    <div class="service-card-button btn hvr-shutter-in-vertical" id="with-pouches-massage">Записаться</div>
                 </div>
             </div>
             <div class="service-card">
@@ -178,7 +179,7 @@
                 <div class="service-card-small-text">Сеанс: 1,5 часа</div>
                 <div class="service-card-price-container">
                     <div class="service-card-price">от 4 800 руб.</div>
-                    <div class="service-card-button btn" id="anti-massage">Записаться</div>
+                    <div class="service-card-button btn hvr-shutter-in-vertical" id="anti-massage">Записаться</div>
                 </div>
             </div>
         </div>
@@ -197,7 +198,7 @@
             Сходите на процедуру массажа камнями и мы сделаем вам альгинатную маску!
         </div>
         <div id="discount-action">
-            <button class="btn" id="discount-button">Записаться на ритуал</button>
+            <button class="btn hvr-shutter-in-vertical" id="discount-button">Записаться на ритуал</button>
         </div>
     </div>
 </div>
@@ -423,7 +424,7 @@
                         <input type="text" placeholder="Ваш номер телефона" id="phone-question">
                         <div class="error-message">Укажите Ваш номер.</div>
                     </div>
-                    <button class="btn" id="question-action" type="button">Позвонить мне</button>
+                    <button class="btn hvr-shutter-in-vertical" id="question-action" type="button">Позвонить мне</button>
                 </form>
                 <div id="question-thanks">
                     Спасибо! Мы свяжемся с вами в течение 15 минут!
@@ -569,7 +570,7 @@
                     <input type="text" placeholder="Выберите дату и время" name="date" id="date">
                     <div class="error-message">Заполните поле</div>
                 </div>
-                <button class="btn" id="reserve-button" type="button">Записаться</button>
+                <button class="btn hvr-shutter-in-vertical" id="reserve-button" type="button">Записаться</button>
             </form>
         </div>
         <div id="sent-success">
@@ -582,6 +583,10 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="loader">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 </div>
 
 <script src="js/jquery-3.5.1.js"></script>

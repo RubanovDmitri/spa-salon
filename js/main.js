@@ -161,6 +161,7 @@ $(document).ready(() => {
         let date = $('#date');
         let error = $('.error-message')
         let flag = true;
+        let loader = $('#loader')
 
 
         error.hide()
@@ -187,6 +188,7 @@ $(document).ready(() => {
         }
 
         if (flag) {
+            loader.css('display', 'flex')
             $.ajax({
                 method: 'POST',
                 url: 'reserve-mail.php',
@@ -194,9 +196,11 @@ $(document).ready(() => {
                 success: () => {
                     $('#reservation-content').hide()
                     $('#sent-success').show()
+                    loader.hide()
                 },
                 error: () => {
                     $('#reservation-container').hide()
+                    loader.hide()
                     alert("Приносим извенения за технические неполадки! Пожалуйста свяжитесь с нами по телефону, указанному на сайте")
                 }
             })
