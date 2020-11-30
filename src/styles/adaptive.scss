@@ -15,14 +15,6 @@
     }
   }
 
-  #gallery .slick-next {
-    right: 435px;
-  }
-
-  #gallery .slick-prev {
-    left: 464px;
-  }
-
   #address {
     #address-container {
       #rose-address {
@@ -91,29 +83,11 @@
     }
   }
 
-  #masters .slick-prev {
-    left: 534px;
-    top: 346px;
-  }
-
-  #masters .slick-next {
-    right: 536px;
-    top: 346px;
-  }
-
   #gallery {
     #gallery-text-container {
       padding-left: 20px;
       padding-right: 20px;
     }
-  }
-
-  #gallery .slick-prev {
-    left: 451px;
-  }
-
-  #gallery .slick-next {
-    right: 421px;
   }
 
   #questions {
@@ -201,30 +175,12 @@
     }
   }
 
-  #masters .slick-prev {
-    left: 445px;
-    top: 293px;
-  }
-
-  #masters .slick-next {
-    right: 445px;
-    top: 293px;
-  }
-
   #gallery {
     #gallery-text-container {
       #gallery-title {
         margin-top: 100px;
       }
     }
-  }
-
-  #gallery .slick-next {
-    right: 331px;
-  }
-
-  #gallery .slick-prev {
-    left: 356px;
   }
 
   #questions {
@@ -343,16 +299,6 @@
     }
   }
 
-  #masters .slick-next {
-    right: 292px;
-    top: 325px;
-  }
-
-  #masters .slick-prev {
-    left: 325px;
-    top: 325px;
-  }
-
   #gallery {
     #gallery-container {
       padding: 0 20px;
@@ -361,19 +307,6 @@
         max-width: 352px;
       }
     }
-  }
-
-  .slick-dots {
-    left: calc(50% - 75px);
-  }
-
-
-  #gallery .slick-next {
-    right: 203px;
-  }
-
-  #gallery .slick-prev {
-    left: 235px;
   }
 
   #address {
@@ -547,10 +480,6 @@
     }
   }
 
-  .slick-dots {
-    left: calc(50% - 150px);
-  }
-
   #questions {
     #questions-container {
       #accordion-text-container {
@@ -671,10 +600,6 @@
     }
   }
 
-  .slick-dots {
-    left: calc(50% - 150px);
-  }
-
   #address {
     #address-container {
       text-align: center;
@@ -723,18 +648,6 @@
   }
 
 }
-
-//@media screen and (max-width: 374px){
-//  #gallery{
-//    #gallery-container{
-//      padding: 0 0 0 10px;
-//      .gallery-image{
-//        max-width: 301px;
-//        margin: 0;
-//      }
-//    }
-//  }
-//}
 
 @media screen and (max-width: 325px) {
   #header {

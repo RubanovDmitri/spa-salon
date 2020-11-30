@@ -5,6 +5,8 @@ $(document).ready(() => {
         slidesToScroll: 3,
         dots: true,
         autoplay: true,
+        appendArrows: $('.master-controls-arrows'),
+        appendDots: $('.master-controls-dots'),
         autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 1024,
@@ -57,6 +59,8 @@ $(document).ready(() => {
         autoplaySpeed: 2300,
         centerMode: true,
         variableWidth: true,
+        appendArrows: $('.controls-arrows'),
+        appendDots: $('.controls-dots'),
         responsive: [
             {
                 breakpoint: 1201,
