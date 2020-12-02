@@ -42,7 +42,9 @@ body {
 }
 
 #header {
-  background: url("../../images/header_bg.png") center;
+  background: #e2dfe0;
+  box-shadow: 1px 1px 10px 10px #e2dfe0;
+  position: relative;
 
   .header-container {
     max-width: 1200px;
@@ -122,6 +124,7 @@ body {
 
     .main-title {
       font-size: 36px;
+      line-height: 50px;
       font-family: "Nunito Bold", sans-serif;
       color: rgb(67, 6, 57);
       max-width: 487px;
@@ -135,9 +138,8 @@ body {
 
     .main-text {
       font-size: 20px;
-      font-family: "Nunito", sans-serif;
+      font-family: "Nunito SemiBold", sans-serif;
       color: rgb(44, 5, 38);
-      line-height: 1.25;
       max-width: 448px;
       margin: 40px 0;
     }
@@ -154,12 +156,13 @@ body {
 .btn {
   background-color: #541349;
   font-size: 16px;
+  line-height: 16px;
   font-family: "Nunito SemiBold", sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
   outline: 0;
   border: 0;
-  border-radius: 25px;
+  border-radius: 100px;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -196,10 +199,12 @@ body {
 
         &:nth-child(3) {
           margin-left: 90px;
+          margin-right: 200px;
         }
 
         &:last-child {
           margin-right: 0px;
+          max-width: 370px;
         }
 
         .advantage-card-image {
@@ -221,6 +226,7 @@ body {
 }
 
 #services {
+  overflow: hidden;
 
   #services-container {
     margin: 0 auto;
@@ -248,9 +254,9 @@ body {
 
     .services-text {
       font-size: 16px;
-      font-family: "Nunito", sans-serif;
+      font-family: "Nunito SemiBold", sans-serif;
       color: rgb(44, 5, 38);
-      width: 548px;
+      width: 558px;
       margin: 30px 0 45px 0;
     }
 
@@ -318,6 +324,7 @@ body {
 
 #discount {
   background: url("../../images/discount-bg.png") center no-repeat;
+  overflow: hidden;
 
   #discount-container {
     margin: 0 auto;
@@ -374,6 +381,8 @@ body {
 }
 
 #masters {
+  overflow: hidden;
+
   #masters-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -447,14 +456,14 @@ body {
   outline: 0;
 }
 
-.master-controls{
+.master-controls {
   position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
   margin-top: 25px;
 
-  .master-controls-arrows, .master-controls-dots{
+  .master-controls-arrows, .master-controls-dots {
     text-align: center;
     position: relative;
     display: inline-block;
@@ -466,6 +475,7 @@ body {
   position: relative;
   bottom: auto;
 }
+
 .master-controls-arrows .slick-prev,
 .master-controls-arrows .slick-next {
   position: relative;
@@ -475,14 +485,20 @@ body {
   top: auto;
   transform: none;
   vertical-align: middle;
+  width: 10px;
 }
-.master-controls-arrows .slick-prev:before{
+
+.master-controls-arrows .slick-prev:before {
   content: url("../../images/prev.png");
 }
 
 .master-controls-arrows .slick-next:before {
   content: url("../../images/next.png");
+}
 
+#masters .slick-dots li {
+  margin: 0 8px;
+  width: 10px;
 }
 
 #masters .slick-dots {
@@ -504,24 +520,6 @@ body {
     color: rgb(114, 17, 99);
   }
 }
-
-//#masters .slick-next {
-//  right: 550px;
-//  top: 348px;
-//
-//  &:before {
-//    content: url("../../images/next.png");
-//  }
-//}
-//
-//#masters .slick-prev {
-//  left: 550px;
-//  top: 348px;
-//
-//  &:before {
-//    content: url("../../images/prev.png");
-//  }
-//}
 
 #gallery {
   #gallery-text-container {
@@ -550,8 +548,7 @@ body {
 
 
     #gallery-text {
-      margin: 30px 0 50px 0;
-      font-size: 16px;
+      margin: 30px 0;
       font-family: "Nunito", sans-serif;
       color: rgb(44, 5, 38);
       max-width: 663px;
@@ -567,8 +564,10 @@ body {
     .gallery-image {
       margin-right: 24px;
       transition: all, .7s;
-      max-width: 384px;
-      max-height: 294px;
+      width: 384px;
+      height: 294px;
+      padding: 0 12px;
+      box-sizing: border-box;
 
       &:hover {
         transform: scale(1.1);
@@ -586,6 +585,9 @@ body {
 
 }
 
+#gallery .slick-track {
+  padding: 20px 50px;
+}
 
 .slick-slide {
   opacity: .5;
@@ -597,28 +599,28 @@ body {
   max-width: 384px;
 }
 
- #gallery .slick-dots {
+#gallery .slick-dots {
 
   & li button:before {
     content: url("../../images/dots.png");
     opacity: 1;
   }
-   & li.slick-active button:before {
-     content: url("../../images/dots-active.png");
-   }
+
+  & li.slick-active button:before {
+    content: url("../../images/dots-active.png");
+  }
 
 }
 
 
-
-.controls{
+.controls {
   position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 5px;
 
-  .controls-arrows, .controls-dots{
+  .controls-arrows, .controls-dots {
     text-align: center;
     position: relative;
     display: inline-block;
@@ -630,6 +632,7 @@ body {
   position: relative;
   bottom: auto;
 }
+
 .controls-arrows .slick-prev,
 .controls-arrows .slick-next {
   position: relative;
@@ -640,7 +643,8 @@ body {
   transform: none;
   vertical-align: middle;
 }
-.controls-arrows .slick-prev:before{
+
+.controls-arrows .slick-prev:before {
   content: url("../../images/prev.png");
 }
 
@@ -733,7 +737,7 @@ body {
         border-radius: 8px;
         background-color: rgb(250, 247, 250);
         box-shadow: 0px 2px 9.2px 0.8px rgba(67, 6, 57, 0.12);
-        padding: 30px 37px;
+        padding: 30px 38px;
         box-sizing: border-box;
         text-align: center;
         height: fit-content;
@@ -747,7 +751,7 @@ body {
           span {
             font-family: "Nunito Bold", sans-serif;
             color: rgb(67, 6, 57);
-            font-size: 19px;
+            font-size: 18px;
           }
         }
 
@@ -820,7 +824,7 @@ body {
   background-image: url("../../images/accordion-arrow.png");
   position: absolute;
   right: 35px;
-  top: 0;
+  top: calc(50% - 5px);
 }
 
 .ui-icon-triangle-1-e {
@@ -842,6 +846,8 @@ body {
 
 
 #address {
+  overflow: hidden;
+
   #address-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -855,7 +861,7 @@ body {
       right: -220px;
     }
 
-    #address-text-container {
+    #address-time-container {
       max-width: 369px;
       margin-right: 40px;
 
@@ -884,7 +890,7 @@ body {
 
       #time-phone-container {
         position: relative;
-        margin-left: 108px;
+        margin-left: 102px;
 
         #lavender-address {
           position: absolute;
@@ -924,14 +930,36 @@ body {
       display: flex;
       justify-content: space-between;
       width: 215px;
-      height: 24px;
+      align-items: center;
+      height: 38px;
 
       .icon {
         margin-right: 30px;
 
+        #youtube {
+          height: 35px;
+          width: 35px;
+        }
+
+        #instagram {
+          height: 24px;
+          width: 24px;
+        }
+
+        #facebook {
+          height: 24px;
+          width: 24px;
+        }
+
+        #vk {
+          height: 40px;
+          width: 44px;
+        }
+
         svg {
           fill: #2c0526;
-          height: 24px;
+          margin: 0;
+          padding: 0;
 
           &:hover {
             fill: #721163;
@@ -986,7 +1014,7 @@ body {
   background: rgba(0, 0, 0, 0.7);
   left: 0;
   top: 0;
-  z-index: 999999;
+  z-index: 99;
   display: none;
   justify-content: center;
   align-items: center;
@@ -997,7 +1025,7 @@ body {
     background-color: rgb(250, 247, 250);
     text-align: center;
     padding: 60px;
-    z-index: 999999;
+    z-index: 99;
     box-sizing: border-box;
 
     #reservation-cancel {
@@ -1026,7 +1054,7 @@ body {
 
         input, select {
           position: relative;
-          border-radius: 25px;
+          border-radius: 100px;
           border-width: 1px;
           border-color: rgb(114, 17, 99);
           border-style: solid;
@@ -1039,12 +1067,9 @@ body {
           color: rgb(44, 5, 38);
           outline: 0;
 
-          &::before {
-            content: url("../../images/select-arrow.png");
-            position: absolute;
-            right: 25px;
-            top: 50%;
-          }
+          //&::after {
+          //
+          //}
 
           .option {
             font-size: 14px;
@@ -1058,6 +1083,31 @@ body {
             color: rgb(44, 5, 38);
           }
         }
+
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          appearance: none;
+        background: url("../../images/select-arrow.png") right no-repeat;
+          cursor: pointer;
+
+        span {
+          position: relative;
+          border-radius: 100px;
+          border-width: 1px;
+          border-color: rgb(114, 17, 99);
+          border-style: solid;
+          background-color: rgb(250, 247, 250);
+          width: 303px;
+          box-sizing: border-box;
+          padding: 17px 21px;
+          font-size: 14px;
+          font-family: "Nunito", sans-serif;
+          color: rgb(44, 5, 38);
+          outline: 0;
+        }
+      }
 
         .error-message {
           @extend %error-text-style
@@ -1097,6 +1147,7 @@ body {
   width: 80px;
   height: 80px;
 }
+
 .lds-ring div {
   box-sizing: border-box;
   display: block;
@@ -1109,15 +1160,19 @@ body {
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fcf transparent transparent transparent;
 }
+
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
 }
+
 .lds-ring div:nth-child(2) {
   animation-delay: -0.3s;
 }
+
 .lds-ring div:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);
@@ -1127,7 +1182,7 @@ body {
   }
 }
 
-#loader{
+#loader {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1140,9 +1195,9 @@ body {
   align-items: center;
 }
 
-.hvr-shutter-in-vertical:before{
-    background-color: rgb(114, 17, 99);
-  border-radius: 25px;
+.hvr-shutter-in-vertical:before {
+  background-color: rgb(114, 17, 99);
+  border-radius: 100px;
 }
 
 @import "adaptive";

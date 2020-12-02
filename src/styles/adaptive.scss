@@ -1,3 +1,17 @@
+@media screen and (min-width: 1921px) {
+  #main {
+    background-size: cover;
+  }
+
+  #discount {
+    background-size: cover;
+  }
+
+  #questions {
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 1900px) {
   #services {
     #services-container {
@@ -47,7 +61,6 @@
       padding-right: 20px;
     }
   }
-
 
   #advantages {
     #advantages-container {
@@ -139,6 +152,9 @@
 
   #advantages {
     #advantages-container {
+      .advantages-title{
+        text-align: center;
+      }
       #advantage-card-container {
         display: flex;
         justify-content: space-between;
@@ -148,6 +164,11 @@
 
           &:nth-child(3) {
             margin-left: 0;
+            margin-right: 0;
+          }
+
+          &:last-child {
+            max-width: 430px;
           }
         }
       }
@@ -156,8 +177,15 @@
 
   #services {
     #services-container {
+      text-align: center;
+
+      .services-text {
+        margin: 20px auto;
+        max-width: 600px;
+      }
+
       #service-card-container {
-        max-width: 650px;
+        max-width: 600px;
         margin: 0 auto;
         flex-wrap: wrap;
 
@@ -275,16 +303,6 @@
     }
   }
 
-  #services {
-    #services-container {
-      text-align: center;
-
-      .services-text {
-        margin: 20px auto;
-        width: auto;
-      }
-    }
-  }
 
   #masters {
     #masters-container {
@@ -314,11 +332,7 @@
       flex-wrap: wrap;
       padding-bottom: 15px;
 
-      #address-text-container {
-        display: flex;
-        width: auto;
-        justify-content: space-between;
-        flex-wrap: wrap;
+      #address-time-container {
 
         #contacts-title {
           margin-right: 100px;
@@ -355,6 +369,43 @@
     }
   }
 
+}
+
+@media screen and(max-width: 844px) {
+  #address {
+    #address-container {
+
+      #address-time-container {
+        max-width: 800px;
+        margin: 0 auto;
+
+        #text-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: wrap;
+
+          #address-text-container {
+            margin-right: 25px;
+          }
+
+          #time-phone-container {
+            display: flex;
+            flex-direction: column;
+
+            .time-title {
+              margin: 0;
+            }
+
+            .time-text {
+              margin-bottom: 15px;
+            }
+          }
+        }
+
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -405,6 +456,14 @@
       padding-top: 50px;
       padding-bottom: 50px;
       text-align: center;
+
+      .main-title {
+        margin: 0 auto;
+      }
+
+      .main-text {
+        margin: 40px auto;
+      }
     }
   }
 
@@ -464,10 +523,6 @@
     }
   }
 
-  #masters .slick-dots {
-    left: calc(50% - 113px);
-  }
-
   #gallery {
     #gallery-text-container {
       text-align: center;
@@ -483,15 +538,31 @@
   #questions {
     #questions-container {
       #accordion-text-container {
-        #accordion {
-          max-width: 400px;
-
-          .accordion-item span {
-            display: none;
+        #accordion{
+          .accordion-item{
+            padding: 15px 29px 15px 5px;
+            text-align: left;
+            .accordion-header{
+              .ui-state-active{
+                padding-bottom: 15px;
+              }
+            }
           }
+        }
+        #question-text-container {
+            max-width: 465px;
+            padding: 30px 10px;
         }
       }
     }
+  }
+
+  .ui-icon{
+    right: -8px;
+  }
+
+  .ui-state-active .ui-icon{
+    top: calc(50% - 8px);
   }
 
   .ui-widget-content {
@@ -501,7 +572,7 @@
   #address {
     #address-container {
 
-      #address-text-container {
+      #address-time-container {
 
         #contacts-title {
           margin-bottom: 30px;
@@ -513,9 +584,8 @@
           }
 
           #lavender-address {
-            width: 200px;
-            top: -174px;
-            left: 201px;
+            top: -5px;
+            left: 266px;
           }
         }
       }
@@ -534,17 +604,16 @@
 
       #icons {
         order: 3;
-        margin: 20px auto 0 auto;
       }
 
       .logo-container {
         order: 1;
-        margin: 0 auto;
+        margin: 0;
       }
 
       #time {
-        margin: 0 auto;
         order: 2;
+        margin: 0 25px;
       }
     }
   }
@@ -566,6 +635,17 @@
   }
 }
 
+@media  screen and (max-width: 616px) {
+  #footer{
+    #footer-container{
+      flex-direction: column;
+      #time{
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   #masters {
     #masters-container {
@@ -576,7 +656,15 @@
       }
     }
   }
+  #gallery {
+    #gallery-container {
+      .gallery-image {
+        height: auto;
+      }
+    }
+  }
 }
+
 
 @media screen and (max-width: 425px) {
 
@@ -600,31 +688,54 @@
     }
   }
 
+  .ui-icon {
+    right: -23px;
+  }
+
   #address {
     #address-container {
-      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-      #address-text-container {
+      #address-time-container {
         text-align: center;
-        margin: 0 auto;
         position: relative;
         z-index: 10;
-        flex-direction: column;
+        margin: 0;
+
+        #text-container{
+          #address-text-container{
+            margin-right: 0;
+          }
+        }
+
+        #contacts-title{
+          margin: 0 auto;
+        }
+
+        #text-container {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
 
         #contacts-title {
-          margin: 0 auto 20px auto;
-        }
-
-        #address-text {
-          margin: 0 auto 20px auto;
-        }
-
-        #time-phone-container {
-          text-align: center;
-
-          #lavender-address {
-            display: none;
+            margin: 0 auto 20px auto;
           }
+
+          #address-text {
+            margin: 0 auto 20px auto;
+          }
+
+          #time-phone-container {
+            text-align: center;
+
+            #lavender-address {
+              display: none;
+            }
+          }
+
         }
       }
     }

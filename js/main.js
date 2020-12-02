@@ -4,10 +4,10 @@ $(document).ready(() => {
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: true,
-        autoplay: true,
+        // autoplay: true,
         appendArrows: $('.master-controls-arrows'),
         appendDots: $('.master-controls-dots'),
-        autoplaySpeed: 2000,
+        // autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 1024,
             settings: {
@@ -55,7 +55,7 @@ $(document).ready(() => {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2300,
         centerMode: true,
         variableWidth: true,
@@ -78,9 +78,9 @@ $(document).ready(() => {
                 breakpoint: 1024,
                 settings: {
                     infinite: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    centerMode: false
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true
                 }
             },
 
